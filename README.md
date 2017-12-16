@@ -1,13 +1,6 @@
 This is just an index page for all the projects in this folder. This also has all the notes I m making as I learn ( watch tutorial videos et all). 
 
 
-Video 8 : Point Vs Pixels Relationship. Remember we work with points and not pixels ( Graphic designers too).
-
-Also learnt how to restrict the app to work on in landscape mode (by editing the project settings, note there was no code change required to do this.)
-
-Video 7 : Remember , everything your app does is triggered by an event.
-
-===
 
 Video 1-6:
 
@@ -16,3 +9,18 @@ Created a simple app so far , that has a button & clicking on it throws an Alert
 The Alert and the action has styles. The alert can pop up as an action script as well, Action script style springs up from the bottom while the default launches something like a modal. One of the available action styles is "destructive", the color of the action text is red for this style . This is to indicate the action is going to be destructive.
 
 There is also a "present" function which I haven't fully understood yet.
+
+Video 7 : Remember , everything your app does is triggered by an event.
+
+Video 8 : Point Vs Pixels Relationship. Remember we work with points and not pixels ( Graphic designers too).
+
+Also learnt how to restrict the app to work on in landscape mode (by editing the project settings, note there was no code change required to do this.)
+
+
+End of Section I
+
+=====
+
+Section 2 :
+
+Connected the value of the slider to Alert Pop up.
