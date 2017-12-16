@@ -26,5 +26,12 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func showWhosThere(){
+        let alert = UIAlertController(title: "Whos there", message: "I mean seriously.. Who is there", preferredStyle: .alert)
+        let action = UIAlertAction(title: "LOL , Its me", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
 }
 
