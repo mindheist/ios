@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  BullsEye
 //
-//  Created by Prabhu Dhanapal on 12/15/17.
 //  Copyright © 2017 pxlhrtbrkr. All rights reserved.
 //
 

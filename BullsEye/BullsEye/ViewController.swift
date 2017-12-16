@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  BullsEye
 //
-//  Created by Prabhu Dhanapal on 12/15/17.
 //  Copyright © 2017 pxlhrtbrkr. All rights reserved.
 //
 
@@ -21,8 +20,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAlert(){
-        print("Hello World")
-
+        let alert = UIAlertController(title: "Hello World", message: "This is my first app", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Awesome", style: .default , handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
+    
 }
 
