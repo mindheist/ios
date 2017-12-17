@@ -8,8 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var slider: UISlider!
+    
     var slider_variable : Int = 0
+    var score : Int = 0
     override func viewDidLoad() {
+        slider_variable = Int(slider.value)
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -18,9 +23,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
     @IBAction func SliderMoved(_ slider: UISlider) {
-        
         slider_variable = Int(slider.value)
         print("The slider value is \(slider_variable)")
 

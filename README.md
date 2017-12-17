@@ -2,6 +2,7 @@ This is just an index page for all the projects in this folder. This also has al
 
 
 
+BullsEye Project : https://github.com/mindheist/ios/tree/master/BullsEye
 Video 1-6:
 
 Created a simple app so far , that has a button & clicking on it throws an Alert. Somethign that I hadn't realized all these days is that the iOS alert window has two parts to it. The alert and the action. Both of these are defined seperately and then the action is added to the Alert. 
@@ -24,3 +25,5 @@ End of Section I
 Section 2 :
 
 Connected the value of the slider to Alert Pop up.
+
+Learn a few things about @IBoutlet - I still dont fully understand how this works , but this is good for now. And learnt how to connect IBOutlet variable to the slider.
