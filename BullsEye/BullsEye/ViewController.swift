@@ -12,12 +12,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var target_label: UILabel!
     @IBOutlet weak var round_label: UILabel!
+    @IBOutlet weak var score_label: UILabel!
     
-    var current_value : Int = 0
-    var target_value : Int = 0
-    var difference : Int = 0
-    var score : Int = 0
-    var round_value : Int = 0
+    var current_value = 0
+    var target_value = 0
+    var difference = 0
+    var total_score = 0
+    var round_points = 0
+    var round_value = 0
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,15 +34,21 @@ class ViewController: UIViewController {
     }
     
     func startNewRound(){
+        round_value = round_value + 1 // not sure where to increment the round variable. This seems to get increment even before the user dismisses the alert
         //generate a new random number
         target_value = getRandomNumber()
-        target_label.text = String(target_value)
-        round_label.text = String(round_value)
+        
         current_value = 50
         slider.value = Float(current_value)
+        update_all_labels()
 
     }
-    
+    func update_all_labels(){
+        target_label.text = String(target_value)
+        round_label.text = String(round_value)
+        score_label.text = String(total_score)
+        
+    }
     func getRandomNumber() -> Int {
         return Int(arc4random_uniform(100)+1)
     }
@@ -51,23 +59,30 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlert(){
-        if Float(current_value) == Float(target_value){
-            var alert_message : String = "Bingo ! That was Spot on"
-        }
-        else if target_value > current_value{
-            difference = target_value - current_value
-        }
-        else if current_value > target_value{
-            difference = current_value - target_value
-        }
+        difference = abs(target_value - current_value)
         
-        var alert_message : String = "You slided upto ... \(current_value) and" + " the target Value is \(target_value)" + "\n" + "That was close, you missed it by \(difference)"
-        let alert = UIAlertController(title: "Hello World", message: alert_message , preferredStyle: .alert)
+        let title: String
+        if difference == target_value {
+            title = "Perfect"
+            round_points += 100
+        }
+        else if difference < 5 {
+            title = "Pretty Close"
+        }
+        else if difference < 10 {
+            title = "You almost had it"
+        }
+        else {
+             title = "Not even close"
+        }
+        round_points = 100 - difference
+        total_score += round_points
+        var alert_message : String = "You scored \(round_points) points"
+        let alert = UIAlertController(title: title, message: alert_message , preferredStyle: .alert)
         let action = UIAlertAction(title: "Awesome", style: .default , handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
         startNewRound()
-        round_value = round_value + 1 // not sure where to increment the round variable. This seems to get increment even before the user dismisses the alert
 
     }
     

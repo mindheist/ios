@@ -110,6 +110,7 @@
                     </view>
                     <connections>
                         <outlet property="round_label" destination="Blu-5m-MBd" id="Z44-Te-NRP"/>
+                        <outlet property="score_label" destination="Smi-XB-Yoo" id="isT-Td-dyR"/>
                         <outlet property="slider" destination="F5C-QI-IxC" id="Ecv-xf-uHK"/>
                         <outlet property="target_label" destination="ulc-N3-DUI" id="8sn-7C-Yk0"/>
                     </connections>

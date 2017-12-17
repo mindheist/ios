@@ -20,10 +20,18 @@ Also learnt how to restrict the app to work on in landscape mode (by editing the
 
 End of Section I
 
-=====
+================================================================
 
 Section 2 :
 
 Connected the value of the slider to Alert Pop up.
 
 Learn a few things about @IBoutlet - I still dont fully understand how this works , but this is good for now. And learnt how to connect IBOutlet variable to the slider.
+
+Added the IBOutlets to a couple of more labels (ie) to the rounds and the score label. Added some more alerting code. Even if I put the slider on the target , it fails for some reason. There is some int / float stuff going on here.
+
+End of Section 2
+
+================================================================
+
+Section 3: Added more logic around scores , bonus points et all . This was pretty prelimnary.
