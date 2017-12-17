@@ -32,8 +32,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func startover(){
+        total_score = 0
+        round_value = 0
+        startNewRound()
+    }
     
-    func startNewRound(){
+     func startNewRound(){
         round_value = round_value + 1 // not sure where to increment the round variable. This seems to get increment even before the user dismisses the alert
         //generate a new random number
         target_value = getRandomNumber()
@@ -79,11 +84,12 @@ class ViewController: UIViewController {
         total_score += round_points
         var alert_message : String = "You scored \(round_points) points"
         let alert = UIAlertController(title: title, message: alert_message , preferredStyle: .alert)
-        let action = UIAlertAction(title: "Awesome", style: .default , handler: nil)
+        let action = UIAlertAction(title: "Awesome", style: .default , handler: {
+            action in
+            self.startNewRound()
+        })
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        startNewRound()
-
     }
     
 }

@@ -35,3 +35,7 @@ End of Section 2
 ================================================================
 
 Section 3: Added more logic around scores , bonus points et all . This was pretty prelimnary.
+
+================================================================
+
+Section 4 : One of things that I noticed earlier too (ie) the score and round updates even before we have dimissed the alert. Going over this in Section 4. We do this using closures , I dont fully understand why the syntax looks like this, but works for now.
