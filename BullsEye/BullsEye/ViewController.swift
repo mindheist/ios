@@ -97,7 +97,7 @@ class ViewController: UIViewController {
         total_score += round_points
         var alert_message : String = "You scored \(round_points) points"
         let alert = UIAlertController(title: title, message: alert_message , preferredStyle: .alert)
-        let action = UIAlertAction(title: "Awesome", style: .default , handler: {
+        let action = UIAlertAction(title: "OK", style: .default , handler: {
             action in
             self.startNewRound()
         })
