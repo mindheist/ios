@@ -26,6 +26,16 @@ class ViewController: UIViewController {
         current_value = lroundf(slider.value) // This is for the very first time only I guess,t
         startNewRound()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let ThumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        let ThumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        slider.setThumbImage(ThumbImageNormal, for: .normal)
+        slider.setThumbImage(ThumbImageHighlighted, for: .highlighted)
+        
+        let sliderLeftTrack = #imageLiteral(resourceName: "SliderTrackLeft")
+        let sliderRightTrack = #imageLiteral(resourceName: "SliderTrackRight")
+        slider.setMaximumTrackImage(#imageLiteral(resourceName: "SliderTrackLeft"), for: .normal)
+        slider.setMaximumTrackImage(#imageLiteral(resourceName: "SliderTrackRight"), for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
