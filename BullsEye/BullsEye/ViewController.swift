@@ -31,11 +31,14 @@ class ViewController: UIViewController {
         let ThumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
         slider.setThumbImage(ThumbImageNormal, for: .normal)
         slider.setThumbImage(ThumbImageHighlighted, for: .highlighted)
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
         
         let sliderLeftTrack = #imageLiteral(resourceName: "SliderTrackLeft")
+        let resizableSliderLeftTrack = sliderLeftTrack.resizableImage(withCapInsets: insets)
         let sliderRightTrack = #imageLiteral(resourceName: "SliderTrackRight")
-        slider.setMaximumTrackImage(#imageLiteral(resourceName: "SliderTrackLeft"), for: .normal)
-        slider.setMaximumTrackImage(#imageLiteral(resourceName: "SliderTrackRight"), for: .normal)
+        let resizableSliderRightTrack = sliderRightTrack.resizableImage(withCapInsets: insets)
+        slider.setMaximumTrackImage(resizableSliderLeftTrack, for: .normal)
+        slider.setMinimumTrackImage(resizableSliderRightTrack, for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
