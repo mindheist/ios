@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SpriteKitSimpleGameII
+//  SimpleSpriteGame
 //
 //  Created by Prabhu Dhanapal on 12/20/17.
 //  Copyright © 2017 pxlhrtbrkr. All rights reserved.
