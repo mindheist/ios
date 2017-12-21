@@ -1,6 +1,8 @@
 This is just an index page for all the projects in this folder. This also has all the notes I m making as I learn ( watch tutorial videos et all). 
 
 
+Project II - Following the instruction here , learning about sprite kit : https://www.raywenderlich.com/145318/spritekit-swift-3-tutorial-beginners
+
 
 BullsEye Project : https://github.com/mindheist/ios/tree/master/BullsEye
 Video 1-6:
@@ -41,3 +43,6 @@ Section 3: Added more logic around scores , bonus points et all . This was prett
 Section 4 : One of things that I noticed earlier too (ie) the score and round updates even before we have dimissed the alert. Going over this in Section 4. We do this using closures , I dont fully understand why the syntax looks like this, but works for now.
 
 Secondly , Also learned how to add another ViewController & how to link it to the previous controllers.
+
+Section 5 : Styling with Images and Labels
+
