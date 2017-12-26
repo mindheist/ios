@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SimpleSpriteGame
+//  hayday1
 //
 //  Copyright © 2017 pxlhrtbrkr. All rights reserved.
 //
