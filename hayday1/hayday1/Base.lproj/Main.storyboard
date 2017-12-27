@@ -65,6 +65,14 @@
                                     <action selector="clicked_on_silo" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5q-1O-Y26"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TA-7J-sfa">
+                                <rect key="frame" x="488" y="127" width="125" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FarmHouse" image="Farmhouse_Stage7"/>
+                                <connections>
+                                    <action selector="clicked_on_the_farmhouse" destination="BYZ-38-t0r" eventType="touchUpInside" id="JbJ-i7-6RH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -77,6 +85,7 @@
     </scenes>
     <resources>
         <image name="Barn" width="355" height="355"/>
+        <image name="Farmhouse_Stage7" width="292" height="292"/>
         <image name="Silo_Final_Stage" width="337" height="337"/>
         <image name="tea_leaves" width="286" height="166"/>
     </resources>
